@@ -1,0 +1,33 @@
+package:
+  name: vtkbone
+  version: "1.0.0"
+
+source:
+  git_url: https://github.com/Besler/vtkbone.git
+  git_rev: master
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - cmake
+    - aimio
+    - python 2.7*
+    - hdf5
+    - netcdf4
+    - hdf4 >=4.2.12
+    - vtk
+  run:
+    - aimio
+    - python 2.7*
+    - hdf5
+    - netcdf4
+    - hdf4 >=4.2.12
+    - vtk
+
+about:
+  home: http://www.numerics88.com/
+  license: MIT
+  summary: Helper functions for working with AIM data and N88 Models
+
